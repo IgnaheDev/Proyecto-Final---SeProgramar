@@ -144,13 +144,11 @@ header .fondo{
     text-align: center;   
 }
 
-#trailer{
+#trailer iframe{
+    width: 1000px;
+    height: 500px;
     margin-top: 2em;
     margin-bottom: 2em;
-}
-
-#trailer video{
-    width: 1000px;
 }
 
 .subtitulo{
@@ -309,10 +307,6 @@ footer{
     align-items: center;
 }
 
-.grupo1{
-    width: 300px;
-}
-
 .grupo2{
     margin-left: 5em;
 }
@@ -387,9 +381,9 @@ header #titulo{
     right: 25%;
 }
 
-#trailer video{
-        width: 100%;
-    }
+#trailer iframe{
+    width: 800px;
+}
 
 .separacion{
     flex-direction: column;
@@ -416,6 +410,12 @@ header #titulo{
     top: 19%;
 }
 
+
+#trailer iframe{
+    width: 500px;
+    height: 300px;
+}
+
 }
 
 
@@ -425,6 +425,10 @@ header #titulo{
 
 p{
     font-size: 15px;
+}
+
+.navegacion a{
+    font-size: 12px;
 }
 
 header .fondo{
@@ -452,6 +456,11 @@ header #titulo{
 
 .informacion #trailer{
     margin-top: 0.5em;
+}
+
+#trailer iframe{
+        width: 250px;
+        height: 150px;
 }
 
 .subtitulo{
