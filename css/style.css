@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+    font-family: "black-block";
+    src: url(./../assets/fonts/xxii-blackblockserifa-eroded.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+p{
+    font-family: "Oswold", sans-serif;
+    font-size: 22px;
+}
+
+a{
+    font-family: "Oswold", sans-serif;
+    font-weight:lighter;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-image: url(./../assets/img/fondo-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+#btnMenu{
+    display: none;
+    cursor: pointer;
+}
+
+#botonAnimado{
+    display: none;
+}
+
+#botonAnimado div{
+    margin: auto;
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform-origin: left;
+}
+
+.navegacion{
+    background-color: black;
+    display: flex;
+}
+
+.navegacion a:hover{
+    background-color: rgb(45, 45, 194);
+}
+
+.navegacion ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navegacion ul li a{
+    display: block;
+    padding: 12px;
+}
+
+.navegacion .desplegable{
+    width:fit-content;
+    height: fit-content;
+    display: none;
+    position: absolute;
+    background-color: black;
+
+}
+
+.navegacion li:hover ul{
+    display: block;
+}
+
+header{
+    width: 100%;
+}
+
+header #titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    position:absolute;
+    right: 33%;
+    top: 16%;
+    -webkit-text-stroke: 0.2px black;
+}
+
+header #titulo p{
+    font-size: 100px;
+}
+
+#titulo .font{
+    font-family: "black-block";
+    color: rgb(205, 205, 205);
+}
+
+header .fondo{
+    width: 100%;
+    height: 300px;
+    background-image: url(./../assets/img/banner-titulo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.informacion{
+    margin: 3em 5em 3em 5em;
+    padding: 3em;
+    background-color: rgba(22, 22, 22, 0.89);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;   
+}
+
+#trailer{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.subtitulo{
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 1em;
+}
+
+.entregas{
+    width: 100%;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+        /* Carrusel imagnes */
+
+.carrucelEntregas{
+    width: 90%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 300%;
+    margin-left: -100%;
+}
+
+.sliderSection{
+    width: 100%;
+    margin-left: 4em;
+    margin-right: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderSection img{
+    display: block;
+    width: 300px;
+}
+
+.sliderSection a:hover{
+    background-image: url(./../assets/img/banner-titulo.jpg);
+}
+
+.separacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+
+.separacion .columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.separacion .tamaño{
+    width: 50%;
+}
+
+.btnSlider{
+    color: black;
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btnSlider:hover{
+    background-color: white;
+}
+
+#btnLeft{
+    left: 10px;
+}
+
+#btnRight{
+    right: 10px;
+}
+
+footer{
+    height:700px;
+    background-color: black;
+}
+
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 4em;
+}
+
+.primerArticle{
+    margin-left: 3em;
+}
+
+.primerArticle li{
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.segundoArticle{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5em;
+}
+
+.fa-youtube{
+    margin-right: 1em;
+}
+
+.redes .icons{
+    font-size: 40px;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+.redes .logos{
+    display: flex;
+    justify-content: center;
+}
+
+.logos img{
+    height: 50px;
+}
+
+#primerLogo{
+    margin-right: 2em;
+}
+
+.tercerArticle ul li{
+    margin-bottom: 1em;    
+}
+
+.seccionJuegos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo1{
+    width: 300px;
+}
+
+.grupo2{
+    margin-left: 5em;
+}
+
+.grupo2 h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Media 1024px */
+
+@media screen and (max-width: 1024px) {
+
+
+
+.navegacion ul{
+    display: none;
+}
+
+#btnMenu:checked ~ #navegacion{
+    display: flex;
+} 
+
+#btnMenu:checked ~ #botonAnimado div:first-child{
+    transform: rotate(45deg);
+    width: 110%;
+}
+
+#btnMenu:checked ~ #botonAnimado div:nth-child(2){
+    opacity: 0;
+}
+
+#btnMenu:checked ~ #botonAnimado div:last-child{
+    transform: rotate(-45deg);
+    width: 110%;
+}
+
+
+#navegacion{
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    width: 30%;
+    height: fit-content;
+    top: 6%;
+    z-index: 1;
+}
+
+#navegacion li{
+    width: 100%;
+    text-align: center;
+}
+
+#navegacion li:hover{
+    background-color: rgb(45, 45, 194);
+}
+
+#botonAnimado{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+}
+
+header #titulo{
+    right: 25%;
+}
+
+#trailer video{
+        width: 100%;
+    }
+
+.separacion{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separacion .tamaño{
+    width: 100%;
+    margin-left: 0;
+}
+}
+
+/* Media 768 */
+@media screen and (max-width:768px) {
+
+header .fondo{
+    background-size: contain;
+}
+
+header #titulo{
+    right: 23%;
+    font-size: 40px;
+    top: 19%;
+}
+
+}
+
+
+/* Media 320 */
+
+@media screen and (max-width:320px) {
+
+p{
+    font-size: 15px;
+}
+
+header .fondo{
+    background-size: cover;
+    height: 100px;
+}
+
+header #titulo{
+    font-size: 1em;
+    right: 24%;
+    top: 10%;
+}
+
+#botonAnimado{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.informacion{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+.informacion #trailer{
+    margin-top: 0.5em;
+}
+
+.subtitulo{
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+/* Carrusel */
+
+.sliderSection{
+    margin: 0;
+}
+
+.sliderSection img{
+    width: 100%;
+}
+
+.grupo2{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.grupo2 h3{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.btnSlider{
+    position: unset;
+}
+
+.botones{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer */
+
+footer{
+    height: 100%;
+}
+
+.primerArticle{
+    text-align: center;
+    margin-left: 0;
+}
+
+.segundoArticle{
+    margin-top: 2em;
+    align-items: center;
+}
+
+.logos{
+    flex-direction: column;
+}
+
+#primerLogo{
+    margin-right: 0;
+}
+
+.redes{
+    width: 100%;
+}
+
+.icons{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+}
