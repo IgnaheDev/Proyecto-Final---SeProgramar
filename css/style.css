@@ -149,6 +149,10 @@ header .fondo{
     margin-bottom: 2em;
 }
 
+#trailer video{
+    width: 1000px;
+}
+
 .subtitulo{
     font-size: 50px;
     text-decoration: underline;
